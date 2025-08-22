@@ -10,7 +10,7 @@
     "mappings": [
       {
         "topic": "common-pdf-generation-1",
-        "staticConfigPath": "https://raw.githubusercontent.com/egovernments/egov-services/vishal-feature-filestore/core/egov-indexer/src/main/resources/rainmaker-pgr-indexer.yml",
+        "staticConfigPath": "https://raw.githubusercontent.com/egovernments/egov-services/vishal-feature-filestore/core/egov-indexer/src/main/resources/rainmaker-hrr-indexer.yml",
         "mappings": [
           {
             "direct": [
@@ -890,7 +890,7 @@
             "externalAPI": [     
               { 
                 "path": "http://egov-mdms-service:8080/egov-mdms-service/v1/_get",
-                "queryParam": "moduleName=tenant&masterName=tenants&tenantId=pg&filter=%5B?(@.code=='{$.tenantId}')%5D",
+                "queryParam": "moduleName=tenant&masterName=tenants&tenantId=hr&filter=%5B?(@.code=='{$.tenantId}')%5D",
                   "apiRequest": null,
                   "responseMapping":[
                     {             
@@ -927,7 +927,7 @@
               },
               { 
                 "path": "http://egov-mdms-service:8080/egov-mdms-service/v1/_get",
-                "queryParam": "moduleName=tenant&masterName=footer&tenantId=pg&filter=%5B?(@.code=='{$.tenantId}' %26%26 @.service=='{$.businessService}')%5D",
+                "queryParam": "moduleName=tenant&masterName=footer&tenantId=hr&filter=%5B?(@.code=='{$.tenantId}' %26%26 @.service=='{$.businessService}')%5D",
                 "apiRequest": null,
                 "responseMapping":[
                   {

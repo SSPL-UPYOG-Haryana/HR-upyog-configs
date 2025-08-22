@@ -521,7 +521,7 @@
                         "localisation":{
                           "required":true,
                           "prefix": "TENANT_TENANTS",
-                          "module":"rainmaker-pgr"
+                          "module":"rainmaker-hrr"
                           }
                       }
                     ]

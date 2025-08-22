@@ -9,7 +9,7 @@
        "mappings": [
           {
              "topic": "noc-pdf-generation",
-             "staticConfigPath": "https://raw.githubusercontent.com/egovernments/egov-services/vishal-feature-filestore/core/egov-indexer/src/main/resources/rainmaker-pgr-indexer.yml",
+             "staticConfigPath": "https://raw.githubusercontent.com/egovernments/egov-services/vishal-feature-filestore/core/egov-indexer/src/main/resources/rainmaker-hrr-indexer.yml",
              "mappings": [
                 {
                    "direct": [
@@ -21,7 +21,7 @@
                       },
                       {
                         "variable": "variable32",                        
-                        "url":"https://s3.ap-south-1.amazonaws.com/pg-egov-assets/pg.citya/logo.png",
+                        "url":"https://s3.ap-south-1.amazonaws.com/hr-egov-assets/hr.citya/logo.png",
                         "type":"image"
                       },   
                       {
@@ -212,7 +212,7 @@
                            "variable": "$variable",
                            "moduleName": "common-masters",
                            "masterName": "Department",
-                           "tenantId": "pg",
+                           "tenantId": "hr",
                            "filter": "[?(@.code == $department)]",
                            "filterMapping": [
                               {
@@ -226,7 +226,7 @@
                            "variable": "$variable",
                            "moduleName": "common-masters",
                            "masterName": "Department",
-                           "tenantId": "pg",
+                           "tenantId": "hr",
                            "filter": "[?(@.code == $department)]",
                            "filterMapping": [
                               {
